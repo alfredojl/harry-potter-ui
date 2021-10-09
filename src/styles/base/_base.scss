@@ -1,9 +1,35 @@
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
+    margin: 0px;
+    padding: 0px;
 }
 
 html, body {
+    background: {
+        image: $urlimg;
+    };
+    margin: 0px;
     height: 100hv;
     padding: 0px;
     width: 100wv;
+}
+
+header {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__text {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

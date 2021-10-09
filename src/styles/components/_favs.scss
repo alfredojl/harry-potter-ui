@@ -1,0 +1,35 @@
+.favs__content {
+    background-color: $favs-color;
+    border: 1px solid darken($color: $favs-color, $amount: 20);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: white;
+    display: flex;
+    margin-right: 3rem;
+    max-width: fit-content;
+    max-height: fit-content;
+    // padding: 2mm;
+}
+
+.favs__separator {
+    color: $dark;
+    border: 1px solid darken($color: $favs-color, $amount: 20);
+    max-height: 100%;
+    max-width: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px;
+}
+
+.favs__button {
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.favs__text {
+    cursor: pointer;
+    margin: 5px;
+}

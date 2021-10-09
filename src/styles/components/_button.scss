@@ -1,0 +1,27 @@
+.btn {
+    background-color: rgba($color: $dark, $alpha: 0.5) ;
+    border: 2px solid darken($color: $favs-color, $amount: 20);
+    border-radius: 0px;
+    color: white;
+    outline-color: red;
+    padding: {
+        top: 10px;
+        bottom: 10px;
+        left: 20px;
+        right: 20px;
+    }
+
+    &:hover {
+        background-color: $favs-color;
+    }
+
+    &:active {
+        background-color: darken($color: $favs-color, $amount: 25)
+    }
+}
+
+.btn__inline {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}

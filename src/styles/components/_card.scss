@@ -1,0 +1,56 @@
+.card__container {
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin: 10px;
+    padding: 0px;
+    width: 230px;
+}
+
+.card__status {
+    font-size: 12px;
+    color: darken($color: $primary, $amount: 20);
+    margin: 8px;
+}
+
+.card__left {
+    align-items: center;
+    background-color: lighten($color: red, $amount: 10);
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+
+.card__photo {
+    background-color: black;
+    border-radius: 50%;
+    height: 40%;
+    margin: 3px;
+    width: 100%;
+}
+
+.card__grid {
+    display: block;
+    margin: 10px;
+}
+
+.card__title {
+    margin: 8px;
+}
+
+.card__text {
+    font-size: 12px;
+    margin: 8px;
+}
+
+// .card__right {
+//     background-color: green;
+//     border: 5px solid red;
+//     height: 50px;
+//     width: 50%;
+// }
