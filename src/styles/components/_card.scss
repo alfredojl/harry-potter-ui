@@ -3,10 +3,11 @@
     border-radius: 6px;
     display: flex;
     flex-direction: row;
-    height: 200px;
     margin: 10px;
+    max-height: 250px;
+    max-width: 350px;
     padding: 0px;
-    width: 230px;
+
 }
 
 .card__status {
@@ -22,15 +23,44 @@
     border-top-left-radius: 6px;
     display: flex;
     justify-content: center;
-    height: 100%;
-    width: 40%;
+    height: auto;
+    width: 100%;
+}
+
+.card__right {
+    width: 100%;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .card__left {
+        width: 100%;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .card__container {
+        flex-direction: column;
+    }
+
+    .card__text {
+        display: none;
+    }
+
+    .card__title{
+        font-size: large;
+        font-weight: bold;
+    }
 }
 
 .card__photo {
-    border-radius: 50%;
-    height: 40%;
+    border-radius: 60%;
+    max-height: 180px;
     margin: 3px;
-    width: 100%;
+    width: 50%;
 }
 
 .card__no-photo {
@@ -38,11 +68,20 @@
     border-radius: 50%;
     height: 40%;
     margin: 3px;
-    width: 100%;
+    width: 50%;
 }
 
 .card__grid {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 300px;
+    // margin: 10px;
+}
+
+.card__row {
+    display: flex;
+    flex-direction: row;
     margin: 10px;
 }
 

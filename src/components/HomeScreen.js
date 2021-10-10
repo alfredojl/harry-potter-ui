@@ -23,8 +23,10 @@ export const HomeScreen = () => {
                     <button className="btn btn-filter">ESTUDIANTES</button>
                     <button className="btn btn-filter">STAFF</button>
                 </div>
-                { loading ? 'Loading...' : null }
-                <CardGrid data={ [ ...data ] }/>
+                { loading && 'Loading...' }
+                {
+                    data.length > 0 && <CardGrid data={ [ ...data ] }/>
+                }
             </div>
         </>
     )
