@@ -27,6 +27,13 @@
 }
 
 .card__photo {
+    border-radius: 50%;
+    height: 40%;
+    margin: 3px;
+    width: 100%;
+}
+
+.card__no-photo {
     background-color: black;
     border-radius: 50%;
     height: 40%;
