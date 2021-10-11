@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Harry Potter UI
+---
+### Instalación:
+Después de hacer la respectiva clonación, nos movemos a la carpeta *hpui* e ingresamos el comando `yarn install`. A pesar de poder instalarse con `npm install`, este último genera conflictos con algunos paquetes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Despliegue
+Para desplegar el proyecto se puede utilizar un paquete llamado *serve* (`npm i -g serve`) o *http-serve* (`npm i -g http-serve`).
 
-## Available Scripts
+Estando en la carpeta de *hpui* vamos a contruir la carpeta de producción con el siguiente comando:
+```
+yarn build
+```
 
-In the project directory, you can run:
+Esto nos generará una carpeta llamada *"build"*, la cual contiene todo lo del proyecto.
 
-### `yarn start`
+En el caso de *serve*, tendremos que ejecutar:
+```
+serve docs
+```
+Para el caso de *http-serve*, nos movemos dentro de la carpeta *build* y ejecutamos:
+```
+http-serve docs
+```
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Preguntas
+### ¿Qué es lo que más te gustó de tu desarrollo?
+Dado que no había trabajado con React, tuve que tomar un curso intensivo de dos días para poder realizar el proyecto, y es justo lo que me gustó: el aprender algo nuevo, además del reto de realizar un proyecto y aprender la tecnología paralelamente.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Si hubieras tenido más tiempo, ¿qué hubieras mejorado o qué más hubieras hecho?
+Con más timepo, hubiera terminado de aprender React para implementar de una mejor manera el proyecto, ya que lo siento muy carente. Además hubiera implementado también el despliegue del back y mejorado el estilo, agregado más filtros, animaciones.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Descríbenos un pain point o bug con el que te hayas encontrado y cómo lo solucionaste.
+Vengo de VueJS, así que el reto fue el estilizar la página, ya que tenía mucho tiempo que no utilizaba CSS. Aprender los hooks y aplicarlos me provocó mucho tiempo de inversión, pero terminó funcionando. Además, no logré desplegar el front correctamente.
